@@ -123,7 +123,7 @@
           </div>
 
           <div class="is-size-6 publication-authors">
-            <span class="author-block">University of Toronto (<sup>1</sup>Computer Science, 
+            <span class="author-block">University of Toronto - (<sup>1</sup>Computer Science, 
                                                               <sup>2</sup>Biomedical Engineering, 
                                                               <sup>3</sup>Data Sciences Institute, 
                                                               <sup>4</sup>Department of Medicine-Neurology, 
@@ -198,7 +198,7 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -213,7 +213,7 @@
     </div>
   </div>
 </section>
-
+ -->
 
 <section class="hero is-light is-small">
   <div class="hero-body">
@@ -281,31 +281,25 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Gait analysis is crucial for the diagnosis and monitoring of movement disorders like Parkinson's Disease.
+            While computer vision models have shown potential for objectively evaluating parkinsonian gait, 
+            their effectiveness is limited by scarce clinical datasets and the challenge of collecting large and well-labelled data, 
+            impacting model accuracy and risk of bias. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            To address these gaps, we propose GAITGen, a novel framework that generates realistic gait sequences
+            conditioned on specified pathology severity levels. GAITGen employs a Conditional Residual Vector Quantized
+            Variational Autoencoder to learn disentangled representations of motion dynamics and pathology-specific factors,
+            coupled with Mask and Residual Transformers for conditioned sequence generation.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            GAITGen generates realistic, diverse gait sequences across severity levels, 
+            enriching datasets and enabling large-scale model training in parkinsonian gait analysis. 
+            Experiments on our new PD-GaM (real) dataset demonstrate that GAITGen outperforms adapted state-of-the-art
+            models in both reconstruction fidelity and generation quality, accurately capturing critical pathology-specific gait features. 
+            A clinical user study confirms the realism and clinical relevance of our generated sequences. 
+            Moreover, incorporating GAITGen-generated data into downstream tasks improves parkinsonian gait severity estimation, 
+            highlighting its potential for advancing clinical gait analysis.
           </p>
         </div>
       </div>
