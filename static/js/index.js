@@ -49,6 +49,27 @@ $(document).ready(function() {
     	});
     }
 
+
+var options2 = {
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			loop: true,
+			infinite: true,
+			autoplay: false,
+			autoplaySpeed: 3000,
+    }
+
+		// Initialize all div with carousel class
+    var carousels2 = bulmaCarousel.attach('.carousel', options2);
+
+    // Loop on each carousel initialized
+    for(var i = 0; i < carousels2.length; i++) {
+    	// Add listener to  event
+    	carousels2[i].on('before:show', state => {
+    		console.log(state);
+    	});
+    }
+
     // Access to bulmaCarousel instance of an element
     var element = document.querySelector('#my-element');
     if (element && element.bulmaCarousel) {
