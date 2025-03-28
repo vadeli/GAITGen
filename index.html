@@ -81,6 +81,7 @@
 
   </div> -->
 </nav>
+  
 
 <!-- Header -->
 <section class="hero">
@@ -192,6 +193,8 @@
   </div>
 </section>
 
+  
+
 <!-- Teaser. -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -204,6 +207,8 @@
     </div>
   </div>
 </section>
+
+  
 
 <!-- Abstract. -->
 <section class="hero is-light">
@@ -243,7 +248,9 @@
   </div>
 </section>
 
-<!-- method video. -->
+  
+
+<!-- method -->
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
@@ -254,6 +261,20 @@
             <source src="static/methodvid.mp4" type="video/mp4">
           </video>
         </div>
+
+        <div class="container is-max-width" style="margin-top: 3rem; margin-bottom: 2rem;">
+          <h2 class="title is-6 has-text-left">How GAITGen Enforces Disentanglement?</h2>
+          <div class="columns is-max-width">
+            <h2 class="subtitle has-text-centered">
+               Without disentanglement, pathology information may leak into motion latents, reducing control over generated gait conditions. 
+            </h2>
+            <div class="column has-text-centered" style="margin-top: 3rem;">
+              <img id="MM" src="./static/images/disent.png" alt="disentanglement steps Image" style="max-width: 100%; height: auto;">
+            </div>
+          </div>
+        </div>
+
+        <!-- MM -->
         <div class="container is-full-width" style="margin-top: 3rem; margin-bottom: 2rem;">
           <h2 class="title is-4 has-text-left">Motion-Pathology Mix and Match Augmentation</h2>
           <div class="columns is-full-width is-vcentered">
@@ -271,12 +292,72 @@
             
           </div>
         </div>
+
+        
       </div>
     </div>
   </div>
 </section>
-<!--/ Paper video. -->
 
+
+  
+<!--/ Qaulitative result -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/chair-tp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shiba.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/fullbody.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/blueshirt.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mask.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/coffee.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toby2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
