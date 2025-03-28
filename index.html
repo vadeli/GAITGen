@@ -305,7 +305,7 @@
           <div class="columns is-max-desktop is-vcentered">
             <!-- Left: Image -->
             <div class="column is-half has-text-centered" style="margin-left: 2rem;">
-              <img id="Comparison" src="./static/images/Comparison.png" alt="Comparison Image" style="max-width: 100%; height: auto;">
+              <img id="Comparison" src="./static/images/comp.png" alt="Comparison Image" style="max-width: 100%; height: auto;">
               <p>
                 <i>
                 Comparison of GAITGen with baselines on the pathology-conditioned motion generation task. “*” denotes baseline trained on PD-GaM. “→” the closer to real the better.
@@ -313,14 +313,25 @@
               </p>
             </div>
             <!-- Right: Text -->
-            <div class="column is-half has-text-centered" style="margin-top: 3rem; margin-left: 2rem;">
-              <img id="Downstream" src="./static/images/Downstream.png" alt="Downstream Image" style="max-width: 100%; height: auto;">
+            <div class="column is-half has-text-centered" style="margin-left: 2rem;">
+              <img id="Downstream" src="./static/images/down.png" alt="Downstream Image" style="max-width: 100%; height: auto;">
               <p>
                 <i>
                 The effect of synthetic data on downstream UPDRS-gait classification. M&M denotes Mix and Match augmentation and *indicates the model is trained on PD-GaM.
                 </i>
               </p>
             </div>
+        </div>
+        <div class="column has-text-centered">
+              <img id="Clinical" src="./static/images/clinical.png" alt="Clinical Image" style="max-width: 100%; height: auto;">
+              <p>
+                <i>
+                User study comparing clinician scoring of gait sequences
+                with the true labels. True scores indicate (Left)-synthetic subset:
+                condition given to GAITGen for sequence generation, (Right) Real
+                subset: UPDRS-gait score provided by the PD-GaM dataset.
+                </i>
+              </p>
         </div>
       </div>
     </div>
